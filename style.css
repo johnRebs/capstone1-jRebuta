@@ -1,0 +1,81 @@
+#logo {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: left;
+}
+
+* {
+    font-family: 'Montserrat';
+}
+
+/* Start of Navbar */
+nav a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff !important;
+}
+
+.navbar-custom {
+    background-color: #1995AD;
+}
+
+/* Custom hover effect for navbar items */
+.nav-link {
+    font-size: 1rem;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+/* Underline effect */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 8px;
+    left: 0;
+    background-color: #F1F1F2;
+    transition: width 0.3s ease;
+}
+
+/* Expand and underline on hover */
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+@media (max-width: 991.98px) { /* lg breakpoint and below */
+    .nav-link::after {
+        display: none;
+    }
+/* End of Navbar */
+
+/* Start of About Me */
+#myName {
+    font-family: 700 !important;
+}
+/* End of About Me */
+
+footer {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #1995AD;
+}
+
+/* Adjust font size for mobile devices */
+@media (max-width: 576px) {
+    .footer {
+        font-size: 10px; /* Font size for mobile devices */
+    }
+}
